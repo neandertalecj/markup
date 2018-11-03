@@ -23,6 +23,7 @@ body{
 }
 #header{
     padding-top: 23px;
+    margin-bottom: 30px;
 }
 #top{
     margin-bottom: 23px;
@@ -99,4 +100,134 @@ body{
     text-decoration: none;
     text-align: center;
     line-height: 40px;
+}
+#banner{
+    height: 330px;
+    margin-bottom: 30px;
+    background-color: #e2e2e2;
+}
+#slider-wrap{
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+.slider-item{
+    position: absolute;
+    top: 0;
+    top: 0;
+}
+.slide-item img{
+    width: 100%;
+}
+.slide-text-wrap{
+    position: absolute;
+    top: 45px;
+    left: 36px;
+}
+.big-text{
+    font-size: 42px;
+    color: #5a5a5a;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.small-text{
+    font-size: 20px;
+    color: #acacac;
+}
+#banner-menu{
+    counter-reset: li;
+    font-size: 0;
+    background-color: #f3f3f3;
+    height: 50px;
+}
+#banner-menu li{
+    display: inline-block;
+    width: 240px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:#8f8f8f;
+    line-height: 50px;
+}
+#banner-menu li a:before{
+    content: counter(li);
+    counter-increment: li;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background-color: #8f8f8f;
+    margin: 0 12px;
+    /* vertical-align: middle; */
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+
+}
+#banner-menu li a{
+    text-decoration: none;
+    color: inherit;
+    /* vertical-align: middle; */
+}
+#banner-menu li.active, 
+#banner-menu li:hover{
+    color: #29c5e6;
+}
+#banner-menu li.active a:before, 
+#banner-menu li:hover a:before{
+    background-color: #29c5e6;
+}
+#main-content{
+    width: 980px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    font-size: 0; 
+}
+.box{
+    font-family: "Tahoma";
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    overflow: hidden;
+    /* width: 470px;
+    height: 50px;
+    background-color: black; */
+}
+.box:last-child{
+    margin-right: 0;
+}
+.box .box-header{
+    font-family: "Oswald";
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #7e7e7e;
+    /* margin-bottom: 15px; */
+    position: relative;
+}
+.box .box-header:before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #29c5e6;
+    vertical-align: top;
+    margin-right: 5px;
+}
+.box .box-header:after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    /* background: url(./images/bg.png) repeat-x;     */
+    background-color: #8f8f8f;
+}
+.box .box-header span{
+    margin-right: 5px;
+}
+.line1 .box{
+    width: 460px;
+}
+.line2 .box{
+    width: 300px; 
 }
